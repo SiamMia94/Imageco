@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4D90FE;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.upload-section, .preview-section, .compress-section, .convert-section, .resize-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.upload-container {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.upload-container p {
+    margin: 0;
+    color: #999;
+}
+
+input[type="file"], input[type="range"], input[type="number"], select, button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4D90FE;
+    color: white;
+	font-size: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+}
+
+#compressed-output, #converted-output, #resized-output {
+    margin-top: 20px;
+}
+
+#compressed-images-container img, #converted-images-container img, #original-images-container img, #resized-images-container img {
+    max-width: 256px;
+    max-height: 256px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resize-section input[type="number"] {
+        width: 150px; /* Atur lebar input number */
+        padding: 15px; /* Beri sedikit padding agar input lebih beraturan */
+        margin-bottom: 30px; /* Beri ruang di bawah input */
+    }
+	
+.compress-section input[type="range"] {
+        width: 90%; /* Atur lebar input range */
+        margin-bottom: 30px; /* Beri ruang di bawah input */
+    }
