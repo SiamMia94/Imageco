@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: red;
+    background-color: #4D90FE;
     color: white;
     padding: 20px;
     width: 100%;
@@ -113,8 +113,8 @@ footer {
     color: white;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-	margin:20px;
+    padding: 10px 20px;
+	margin:0px 20px;
 }
 
 .resize-section input[type="number"] {
